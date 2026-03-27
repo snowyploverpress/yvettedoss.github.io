@@ -1,0 +1,723 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Yvette Doss — Education Researcher</title>
+<meta name="description" content="Yvette Doss is a PhD candidate in Education at UC Santa Barbara. Her research focuses on neurodivergent learners, inclusive education, and disability studies.">
+<meta name="keywords" content="Yvette Doss, education researcher, special education, neurodivergent, UCSB, disability studies, teacher education, UC Santa Barbara">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,500;0,600;1,400;1,500&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet">
+<style>
+  *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+  :root {
+    --cream: #FAF7F2;
+    --warm-white: #FFFDF9;
+    --ink: #1C1917;
+    --ink-mid: #44403C;
+    --ink-light: #78716C;
+    --ink-faint: #A8A29E;
+    --accent: #8B5E3C;
+    --accent-light: #C4956A;
+    --accent-pale: #F5EDE3;
+    --rule: #E7E0D8;
+    --serif: 'Lora', Georgia, serif;
+    --sans: 'DM Sans', system-ui, sans-serif;
+  }
+
+  html { scroll-behavior: smooth; }
+
+  body {
+    background: var(--cream);
+    color: var(--ink);
+    font-family: var(--sans);
+    font-size: 16px;
+    line-height: 1.75;
+    -webkit-font-smoothing: antialiased;
+  }
+
+  /* NAV */
+  nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 100;
+    background: rgba(250, 247, 242, 0.92);
+    backdrop-filter: blur(8px);
+    border-bottom: 1px solid var(--rule);
+  }
+
+  .nav-inner {
+    max-width: 860px;
+    margin: 0 auto;
+    padding: 0 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 60px;
+  }
+
+  .nav-name {
+    font-family: var(--serif);
+    font-size: 1.05rem;
+    font-weight: 500;
+    color: var(--ink);
+    text-decoration: none;
+    letter-spacing: 0.01em;
+  }
+
+  .nav-links {
+    display: flex;
+    gap: 2rem;
+    list-style: none;
+  }
+
+  .nav-links a {
+    font-size: 0.82rem;
+    font-weight: 400;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    color: var(--ink-mid);
+    text-decoration: none;
+    transition: color 0.2s;
+  }
+
+  .nav-links a:hover { color: var(--accent); }
+
+  /* MAIN CONTENT */
+  main {
+    max-width: 860px;
+    margin: 0 auto;
+    padding: 0 2rem;
+  }
+
+  /* HERO */
+  .hero {
+    padding: 140px 0 80px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 4rem;
+    align-items: end;
+    border-bottom: 1px solid var(--rule);
+  }
+
+  .hero-left {
+    display: flex;
+    flex-direction: column;
+    gap: 1.25rem;
+  }
+
+  .hero-eyebrow {
+    font-size: 0.75rem;
+    font-weight: 400;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    color: var(--accent);
+  }
+
+  .hero-name {
+    font-family: var(--serif);
+    font-size: clamp(2.8rem, 6vw, 4rem);
+    font-weight: 500;
+    line-height: 1.1;
+    color: var(--ink);
+  }
+
+  .hero-tagline {
+    font-size: 1rem;
+    color: var(--ink-mid);
+    line-height: 1.7;
+    max-width: 36ch;
+    font-weight: 300;
+  }
+
+  .hero-right {
+    padding-bottom: 4px;
+  }
+
+  .hero-bio-short {
+    font-family: var(--serif);
+    font-size: 1.1rem;
+    line-height: 1.8;
+    color: var(--ink-mid);
+    font-style: italic;
+    border-left: 2px solid var(--accent-light);
+    padding-left: 1.5rem;
+  }
+
+  /* SECTIONS */
+  section {
+    padding: 80px 0;
+    border-bottom: 1px solid var(--rule);
+  }
+
+  section:last-of-type { border-bottom: none; }
+
+  .section-label {
+    font-size: 0.72rem;
+    font-weight: 400;
+    letter-spacing: 0.14em;
+    text-transform: uppercase;
+    color: var(--accent);
+    margin-bottom: 2.5rem;
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+  }
+
+  .section-label::after {
+    content: '';
+    display: block;
+    height: 1px;
+    width: 40px;
+    background: var(--accent-light);
+  }
+
+  /* ABOUT */
+  .about-grid {
+    display: grid;
+    grid-template-columns: 3fr 2fr;
+    gap: 4rem;
+    align-items: start;
+  }
+
+  .about-text p {
+    font-size: 1rem;
+    color: var(--ink-mid);
+    line-height: 1.85;
+    margin-bottom: 1.25rem;
+  }
+
+  .about-text p:last-child { margin-bottom: 0; }
+
+  .about-sidebar {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+  }
+
+  .sidebar-block {
+    padding: 1.25rem 1.5rem;
+    background: var(--warm-white);
+    border: 1px solid var(--rule);
+    border-top: 2px solid var(--accent-light);
+  }
+
+  .sidebar-block h3 {
+    font-size: 0.7rem;
+    font-weight: 500;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    color: var(--accent);
+    margin-bottom: 0.75rem;
+  }
+
+  .sidebar-block p, .sidebar-block li {
+    font-size: 0.9rem;
+    color: var(--ink-mid);
+    line-height: 1.65;
+  }
+
+  .sidebar-block ul {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 0.35rem;
+  }
+
+  /* RESEARCH */
+  .research-intro {
+    font-size: 1rem;
+    color: var(--ink-mid);
+    line-height: 1.85;
+    max-width: 62ch;
+    margin-bottom: 3rem;
+  }
+
+  .project-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1.5rem;
+    margin-bottom: 3.5rem;
+  }
+
+  .project-card {
+    padding: 1.5rem;
+    background: var(--warm-white);
+    border: 1px solid var(--rule);
+    transition: border-color 0.2s;
+  }
+
+  .project-card:hover { border-color: var(--accent-light); }
+
+  .project-funder {
+    font-size: 0.7rem;
+    font-weight: 500;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    color: var(--accent-light);
+    margin-bottom: 0.5rem;
+  }
+
+  .project-card h3 {
+    font-family: var(--serif);
+    font-size: 0.98rem;
+    font-weight: 500;
+    color: var(--ink);
+    margin-bottom: 0.6rem;
+    line-height: 1.4;
+  }
+
+  .project-card p {
+    font-size: 0.88rem;
+    color: var(--ink-light);
+    line-height: 1.65;
+  }
+
+  .research-sub {
+    font-size: 0.72rem;
+    font-weight: 500;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    color: var(--ink-light);
+    margin-bottom: 1.25rem;
+    padding-bottom: 0.5rem;
+    border-bottom: 1px solid var(--rule);
+  }
+
+  .pub-list {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 1.25rem;
+    margin-bottom: 3rem;
+  }
+
+  .pub-list li {
+    font-size: 0.93rem;
+    color: var(--ink-mid);
+    line-height: 1.7;
+    padding-left: 1rem;
+    border-left: 2px solid var(--rule);
+    transition: border-color 0.2s;
+  }
+
+  .pub-list li:hover { border-left-color: var(--accent-light); }
+
+  .pub-list em { font-style: italic; }
+
+  .pub-status {
+    display: inline-block;
+    font-size: 0.72rem;
+    font-weight: 500;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    color: var(--accent);
+    background: var(--accent-pale);
+    padding: 2px 8px;
+    margin-left: 0.4rem;
+    vertical-align: middle;
+  }
+
+  .pres-list {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+  }
+
+  .pres-item {
+    display: grid;
+    grid-template-columns: 80px 1fr;
+    gap: 1rem;
+    font-size: 0.9rem;
+  }
+
+  .pres-year {
+    color: var(--ink-faint);
+    font-size: 0.85rem;
+    padding-top: 2px;
+  }
+
+  .pres-title {
+    color: var(--ink-mid);
+    line-height: 1.6;
+  }
+
+  .pres-venue {
+    font-size: 0.82rem;
+    color: var(--ink-light);
+  }
+
+  /* TEACHING */
+  .teaching-intro {
+    font-size: 1rem;
+    color: var(--ink-mid);
+    line-height: 1.85;
+    max-width: 62ch;
+    margin-bottom: 3rem;
+  }
+
+  .teaching-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 3rem;
+  }
+
+  .teaching-col h3 {
+    font-size: 0.72rem;
+    font-weight: 500;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    color: var(--ink-light);
+    margin-bottom: 1.25rem;
+    padding-bottom: 0.5rem;
+    border-bottom: 1px solid var(--rule);
+  }
+
+  .course-list {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 0.85rem;
+  }
+
+  .course-item {
+    display: flex;
+    flex-direction: column;
+    gap: 0.15rem;
+  }
+
+  .course-code {
+    font-size: 0.78rem;
+    font-weight: 500;
+    color: var(--accent);
+    letter-spacing: 0.04em;
+  }
+
+  .course-name {
+    font-size: 0.9rem;
+    color: var(--ink-mid);
+  }
+
+  .course-note {
+    font-size: 0.8rem;
+    color: var(--ink-light);
+  }
+
+  .workshop-list {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+  }
+
+  .workshop-item {
+    padding: 1rem 1.25rem;
+    background: var(--accent-pale);
+    border-left: 2px solid var(--accent-light);
+  }
+
+  .workshop-title {
+    font-size: 0.9rem;
+    color: var(--ink);
+    font-weight: 500;
+    margin-bottom: 0.2rem;
+  }
+
+  .workshop-meta {
+    font-size: 0.8rem;
+    color: var(--ink-light);
+  }
+
+  /* CONTACT */
+  .contact-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 4rem;
+    align-items: start;
+  }
+
+  .contact-text {
+    font-size: 1rem;
+    color: var(--ink-mid);
+    line-height: 1.85;
+  }
+
+  .contact-text p { margin-bottom: 1rem; }
+
+  .contact-detail {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+  }
+
+  .contact-block h3 {
+    font-size: 0.7rem;
+    font-weight: 500;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    color: var(--ink-light);
+    margin-bottom: 0.4rem;
+  }
+
+  .contact-block a {
+    font-size: 0.95rem;
+    color: var(--accent);
+    text-decoration: none;
+    border-bottom: 1px solid var(--accent-pale);
+    transition: border-color 0.2s;
+  }
+
+  .contact-block a:hover { border-bottom-color: var(--accent); }
+
+  .contact-block p {
+    font-size: 0.9rem;
+    color: var(--ink-mid);
+  }
+
+  /* FOOTER */
+  footer {
+    padding: 2.5rem 2rem;
+    max-width: 860px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .footer-name {
+    font-family: var(--serif);
+    font-size: 0.9rem;
+    color: var(--ink-faint);
+    font-style: italic;
+  }
+
+  .footer-note {
+    font-size: 0.78rem;
+    color: var(--ink-faint);
+  }
+
+  /* RESPONSIVE */
+  @media (max-width: 680px) {
+    .hero { grid-template-columns: 1fr; gap: 2rem; padding: 120px 0 60px; }
+    .about-grid { grid-template-columns: 1fr; gap: 2.5rem; }
+    .project-grid { grid-template-columns: 1fr; }
+    .teaching-grid { grid-template-columns: 1fr; gap: 2.5rem; }
+    .contact-grid { grid-template-columns: 1fr; gap: 2.5rem; }
+    .nav-links { gap: 1.25rem; }
+    main { padding: 0 1.25rem; }
+    footer { flex-direction: column; gap: 0.5rem; text-align: center; }
+  }
+
+  /* ANIMATIONS */
+  @keyframes fadeUp {
+    from { opacity: 0; transform: translateY(16px); }
+    to { opacity: 1; transform: translateY(0); }
+  }
+
+  .hero-eyebrow { animation: fadeUp 0.5s ease both; }
+  .hero-name { animation: fadeUp 0.6s 0.1s ease both; }
+  .hero-tagline { animation: fadeUp 0.6s 0.2s ease both; }
+  .hero-right { animation: fadeUp 0.7s 0.3s ease both; }
+</style>
+</head>
+<body>
+
+<nav>
+  <div class="nav-inner">
+    <a href="#" class="nav-name">Yvette Doss</a>
+    <ul class="nav-links">
+      <li><a href="#about">About</a></li>
+      <li><a href="#research">Research</a></li>
+      <li><a href="#teaching">Teaching</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+  </div>
+</nav>
+
+<main>
+
+  <!-- HERO -->
+  <div class="hero">
+    <div class="hero-left">
+      <span class="hero-eyebrow">Education Researcher</span>
+      <h1 class="hero-name">Yvette<br>Doss</h1>
+      <p class="hero-tagline">Researching neurodivergent learners, AI, and accessibility. Ph.D. Candidate at UC Santa Barbara.</p>
+    </div>
+    <div class="hero-right">
+      <p class="hero-bio-short">I study how autistic and neurodivergent students use and experience AI tools in education.</p>
+    </div>
+  </div>
+
+  <!-- ABOUT -->
+  <section id="about">
+    <div class="section-label">About</div>
+    <div class="about-grid">
+      <div class="about-text">
+        <p>I am on the academic job market in fall 2026. I am a Ph.D. Candidate in Education at the Gevirtz Graduate School of Education, University of California, Santa Barbara, with an emphasis in Special Education, Disability, and Risk Studies. I hold a Project TEAMS Fellowship, an OSEP-funded doctoral training grant preparing scholars to advance equity in student mental health and wellbeing in schools.</p>
+        <p>My research examines how AI systems shape the experiences of autistic and neurodivergent students in higher education — with particular attention to the cognitive, social, and emotional demands those systems place on users that existing accessibility frameworks cannot currently measure. My dissertation research examines AI use among autistic college students. This work sits at the intersection of human-computer interaction, disability studies, and education research. I am also interested in the design and governance of educational AI tools more broadly.</p>
+        <p>Before starting at UCSB in 2022, I earned an M.A. in Education from UC Santa Barbara, a B.A. in Philosophy from UC Berkeley, and an M.F.A. in Creative Writing from UC Riverside. I spent six years as a special education teacher in Los Angeles Unified School District, and before that worked as a journalist, essayist, and communications professional covering equity, education, and public ethics.</p>
+        <p>At UCSB, I founded the Neurodivergent Student Project, which provides peer mentorship and community for neurodivergent graduate students, and edited <em>Disparate Kind: Neurodivergent Poets Chapbook</em> (Snowy Plover Press, 2026).</p>
+      </div>
+      <div class="about-sidebar">
+        <div class="sidebar-block">
+          <h3>Education</h3>
+          <ul>
+            <li>Ph.D. Candidate, Education — UC Santa Barbara</li>
+            <li>M.A., Education — UC Santa Barbara, 2025</li>
+            <li>M.F.A., Creative Writing — UC Riverside, 2012</li>
+            <li>B.A., Philosophy — UC Berkeley, 1993</li>
+          </ul>
+        </div>
+        <div class="sidebar-block">
+          <h3>Research Areas</h3>
+          <ul>
+            <li>AI accessibility &amp; neurodivergent learner experience</li>
+            <li>Human-computer interaction</li>
+            <li>Disability studies &amp; special education</li>
+            <li>Educational AI design &amp; governance</li>
+            <li>Distributed cognition &amp; invisible labor</li>
+          </ul>
+        </div>
+        <div class="sidebar-block">
+          <h3>Credential</h3>
+          <p>California Clear Education Specialist Instruction Credential, Mild-Moderate. ASD &amp; EL added authorizations.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- RESEARCH -->
+  <section id="research">
+    <div class="section-label">Research</div>
+    <p class="research-intro">My work examines how AI systems shape the experiences of autistic and neurodivergent students, and what those systems demand of users that current accessibility frameworks cannot yet account for. Current projects span AI-mediated learning, autistic student transitions, and the qualitative study of neurodivergent experience in educational settings.</p>
+
+    <div class="research-sub">Current projects</div>
+    <div class="project-grid">
+      <div class="project-card">
+        <div class="project-funder">Hewlett Foundation</div>
+        <h3>Deeper Learning in Teacher Education Programs</h3>
+        <p>Graduate Student Researcher on a qualitative study examining deeper learning practices across teacher education programs nationwide, through interviews with teacher candidates and faculty.</p>
+      </div>
+      <div class="project-card">
+        <div class="project-funder">Snowy Plover Press</div>
+        <h3>Disparate Kind: Neurodivergent Poets Chapbook</h3>
+        <p>Editor and founder of a literary publication created through the Neurodivergent Student Project at UCSB, centering the voices of neurodivergent writers and challenging normative expectations of cognition, language, and form.</p>
+      </div>
+    </div>
+
+    <div class="research-sub">Publications</div>
+    <ul class="pub-list">
+      <li>
+        Schuck, R. K., Geng, A., <strong>Doss, Y.</strong>, Lin, F., Crousore, H., Baiden, K. M., Dwyer, P., Williams, Z. J., &amp; Wang, M. (2024). A qualitative investigation into autistic adults' perspectives on intervention goals for autistic children. <em>Neurodiversity, 2.</em> <a href="https://doi.org/10.1177/27546330241266718" style="color: var(--accent); text-decoration: none; font-size: 0.82rem;">doi:10.1177/27546330241266718</a>
+      </li>
+      <li>
+        Lambert, R. &amp; <strong>Doss, Y.</strong> Engaging teachers in experiences of neurodiverse students learning mathematics: Insider narratives of disability and mathematics. <em>Mathematics Teacher Educator.</em> <span class="pub-status">Under review</span>
+      </li>
+      <li>
+        Monroy Castro, M., Lambert, R., Mireles-Rios, R., &amp; <strong>Doss, Y.</strong> Flipping tortillas: Chicana methodologies and the embodied mathematics of Latina students. <em>International Journal of Qualitative Studies in Education.</em> <span class="pub-status">Under review</span>
+      </li>
+      <li>
+        <strong>Doss, Y.</strong> (Ed.). (2026). <em>Disparate Kind: Neurodivergent Poets Chapbook.</em> Snowy Plover Press.
+      </li>
+    </ul>
+
+    <div class="research-sub">Conference presentations</div>
+    <ul class="pres-list">
+      <li class="pres-item">
+        <span class="pres-year">2026</span>
+        <div>
+          <div class="pres-title">Autistic users' descriptions of LLM use for learning and executive support</div>
+          <div class="pres-venue">American Educational Research Association (AERA) Annual Meeting, Los Angeles, CA</div>
+        </div>
+      </li>
+      <li class="pres-item">
+        <span class="pres-year">2025</span>
+        <div>
+          <div class="pres-title">Embodied intersectionality and emotion: Theorizing complex embodiment of Latinas with learning disabilities learning math</div>
+          <div class="pres-venue">American Educational Research Association (AERA) Annual Meeting, Denver, CO</div>
+        </div>
+      </li>
+      <li class="pres-item">
+        <span class="pres-year">2024</span>
+        <div>
+          <div class="pres-title">Cross-disciplinary collaborative efforts to advance equity in mental health</div>
+          <div class="pres-venue">National Association of School Psychologists (NASP) Annual Convention, New Orleans, LA</div>
+        </div>
+      </li>
+    </ul>
+  </section>
+
+  <!-- TEACHING -->
+  <section id="teaching">
+    <div class="section-label">Teaching</div>
+    <p class="teaching-intro">My approach to teaching is shaped by six years in LAUSD classrooms and ongoing work in teacher preparation. I am committed to Universal Design for Learning as both a pedagogical framework and an equity stance — one that assumes learner variability as the norm rather than the exception. At the postsecondary level, I design learning experiences that help students connect abstract educational ideas to the real decisions teachers must make about access, inclusion, and learner difference.</p>
+
+    <div class="teaching-grid">
+      <div class="teaching-col">
+        <h3>Workshops &amp; Invited Talks</h3>
+        <ul class="workshop-list">
+          <li class="workshop-item">
+            <div class="workshop-title">TAs Supporting Students with Autism &amp; ADHD at UCSB</div>
+            <div class="workshop-meta">Office of Teaching and Learning, UCSB · 2025<br>Certificate in Inclusive Teaching Program</div>
+          </li>
+          <li class="workshop-item">
+            <div class="workshop-title">TAs Supporting Neurodivergent Students at UCSB</div>
+            <div class="workshop-meta">Office of Teaching and Learning, UCSB · 2024<br>Certificate in Inclusive Teaching Program</div>
+          </li>
+          <li class="workshop-item">
+            <div class="workshop-title">Advocacy and Agency in Equity Conversations: Supporting Neurodivergent Students</div>
+            <div class="workshop-meta">DEI Discussions Series, UCSB · 2023</div>
+          </li>
+          <li class="workshop-item">
+            <div class="workshop-title">Counselors Supporting Neurodivergent Students at UCSB</div>
+            <div class="workshop-meta">Letters &amp; Science Counselors, UCSB · 2023</div>
+          </li>
+        </ul>
+      </div>
+      <div class="teaching-col">
+        <h3>K–12 Teaching</h3>
+        <ul class="course-list">
+          <li class="course-item">
+            <span class="course-code">2016–2022</span>
+            <span class="course-name">Education Specialist, Los Angeles Unified School District</span>
+            <span class="course-note">Inclusion/RSP and Special Day Class instruction in secondary math and ELA, and elementary mild-moderate SLD. California Clear Education Specialist Instruction Credential (Mild-Moderate), ASD and EL added authorizations.</span>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <section id="contact">
+    <div class="section-label">Contact</div>
+    <div class="contact-grid">
+      <div class="contact-text">
+        <p>I welcome inquiries from prospective collaborators, journalists, educators, and students. I am particularly glad to connect with people working on neurodivergent education, inclusive pedagogy, and teacher preparation.</p>
+        <p>My curriculum vitae is available upon request.</p>
+      </div>
+      <div class="contact-detail">
+        <div class="contact-block">
+          <h3>Email</h3>
+          <a href="/cdn-cgi/l/email-protection#ff9b908c8cbf8a9c8c9dd19a9b8a"><span class="__cf_email__" data-cfemail="fe9a918d8dbe8b9d8d9cd09b9a8b">[email&#160;protected]</span></a>
+        </div>
+        <div class="contact-block">
+          <h3>Institutional address</h3>
+          <p>Gevirtz Graduate School of Education<br>University of California, Santa Barbara<br>Santa Barbara, CA</p>
+        </div>
+        <div class="contact-block">
+          <h3>CV</h3>
+          <p>Available upon request.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer>
+  <span class="footer-name">Yvett
