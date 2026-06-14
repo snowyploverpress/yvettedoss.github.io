@@ -654,17 +654,22 @@
     <div class="research-sub">Current projects</div>
     <div class="project-grid">
       <div class="project-card">
+        <div class="project-funder">Dissertation in progress</div>
+        <h3>Who Does the Work? Cognitive Labor Redistribution and Autistic College Student Experience in Human-AI Interaction</h3>
+        <p>My dissertation examines how cognitive labor shifts when autistic college students work with AI tools: who carries the work of meeting academic demands, and how that distribution changes in human-AI interaction.</p>
+      </div>
+      <div class="project-card">
         <div class="project-funder">Doctoral research</div>
         <h3>Learning From Autistic Redditors: ChatGPT Adaptations and Inclusive Educational AI Design</h3>
         <p>A study of how autistic adults and students describe using ChatGPT for executive functioning, social communication, emotional regulation, writing, and educational navigation, connecting neurodiversity-affirming disability research with questions of AI accessibility, cognitive labor, and inclusive design.</p>
       </div>
       <div class="project-card">
-        <div class="project-funder">Hewlett Foundation</div>
+        <div class="project-funder">Additional Research</div>
         <h3>Deeper Learning in Teacher Education Programs</h3>
         <p>Graduate Student Researcher on a qualitative study examining deeper learning practices across teacher education programs nationwide, through interviews with teacher candidates and faculty.</p>
       </div>
       <div class="project-card">
-        <div class="project-funder">Doctoral research</div>
+        <div class="project-funder">Additional Research</div>
         <h3>District Variation in Least Restrictive Environment Placement in California</h3>
         <p>An emerging study using California special education program-setting data to examine how least restrictive environment placement patterns vary across districts for autistic students and students with specific learning disabilities, asking whether inclusion is best understood not only as an individual IEP decision but as a district-level pattern of inclusive capacity.</p>
       </div>
@@ -729,7 +734,7 @@
       <div class="contact-detail">
         <div class="contact-block">
           <h3>Email</h3>
-          <a href="mailto:doss@ucsb.edu">doss@ucsb.edu</a>
+          <a href="#" id="email-link">Email</a>
         </div>
         <div class="contact-block">
           <h3>Institutional address</h3>
@@ -748,6 +753,16 @@
   </section>
 
 </main>
+
+<script>
+  (function () {
+    var user = 'doss', domain = 'ucsb.edu';
+    var link = document.getElementById('email-link');
+    if (link) {
+      link.setAttribute('href', 'mailto:' + user + '@' + domain);
+    }
+  })();
+</script>
 
 <footer>
   <span class="footer-name">Yvette Doss</span>
